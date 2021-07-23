@@ -78,15 +78,8 @@ WSGI_APPLICATION = 'django_underscore.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 
-# DATABASES = {
-#      'default': {
-#          'ENGINE': 'django.db.backends.sqlite3',
-#          'NAME': BASE_DIR / 'db.sqlite3',
-#      }
-# }
-
 DATABASES = {
-    'default': dj_database_url.parse('postgres://pubbwbpqrweppd:9d75e9f73cee32087c399b4ba521d19292bfcbd08a1551367c5424f1dc32f958@ec2-54-173-31-84.compute-1.amazonaws.com:5432/d76vudptpuuhbl')
+    'default': dj_database_url.parse('postgres://eskvkrffdsspgk:90a9092c05b994a4618d126af2948ab4c0c7caf3a82c195fdb6741115de381d7@ec2-34-193-113-223.compute-1.amazonaws.com:5432/dfo970mc39c1d')
 }
 
 
@@ -128,6 +121,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = '/static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
